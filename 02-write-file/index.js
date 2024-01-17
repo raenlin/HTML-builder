@@ -13,7 +13,7 @@ const rl = readline.createInterface({
 rl.on('line', (input) => {
   writeStream.write(input + '\n');
 
-  if (input.toLocaleLowerCase() === 'exit') {
+  if (input.toLowerCase() === 'exit') {
     console.log('Текст записан.');
     writeStream.end();
     process.exit();
